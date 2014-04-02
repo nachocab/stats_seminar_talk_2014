@@ -19,12 +19,19 @@ library(ggplot2)
 runApp("shiny_asteroids")
 ```
 
-You should see this.
+You should see this:
 
-![Shiny Asteriods](http://i.imgur.com/neIziuD.png)
+![Shiny Asteroids](http://imgur.com/Ki7uOhG)
 
 ## Clickme example
 
 ``` r
-library(clickme)
+source("clickme_asteroids.R")
 ```
+
+You should see this ([live example](rclickme.com/asteroids)):
+
+![Clickme Asteroids](http://imgur.com/ukbKCJ8)
+
+Original by [Alex H. Parker](https://plot.ly/~alexhp/68/).
+Data from [NASA NEO](http://neo.jpl.nasa.gov/cgi-bin/neo_ca?type=NEO&hmax=all&sort=date&sdir=ASC&tlim=all&dmax=5LD&max_rows=50&fmt=full&action=Display+Table&show=1)

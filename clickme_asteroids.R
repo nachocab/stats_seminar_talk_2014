@@ -1,8 +1,9 @@
+library(clickme)
+library(scales)
 asteroids_data <- read.table("asteroids_data.txt", sep="\t", header = TRUE)
 group_names <- c("fast", "faster", "fastest")
 groups_by_velocity <- cut(log10(asteroids_data$velocity), breaks = 3, labels = group_names)
 palette <- setNames(c("#fecc5c", "#fd8d3c","#f03b20"), group_names)
-library(scales)
 
 clickme("points",asteroids_data$date, asteroids_data$distance,
         names = asteroids_data$name,
