@@ -39,7 +39,7 @@ clickme("points", asteroids_data$velocity,
     xlab = "Velocity (km/s)", ylab = "Diameter (meters)")
 ```
 
-You should see this ([live example](http://rclickme.com/asteroids_points)):
+You should see this ([live example](http://rclickme.com/asteroids_points.html)):
 
 ![Clickme Asteroids points](http://imgur.com/ukbKCJ8.jpg)
 
@@ -53,6 +53,6 @@ Data from [NASA NEO](http://neo.jpl.nasa.gov/cgi-bin/neo_ca?type=NEO&hmax=all&so
 source("clickme_asteroids_lines.R")
 ```
 
-You should see this ([live example](http://rclickme.com/asteroids_lines)):
+You should see this ([live example](http://rclickme.com/asteroids_lines.html)):
 
 ![Clickme Asteroids lines](http://i.imgur.com/gNiWi6E.jpg)
