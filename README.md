@@ -21,7 +21,7 @@ runApp("shiny_asteroids")
 
 You should see this:
 
-![Shiny Asteroids](http://imgur.com/Ki7uOhG)
+![Shiny Asteroids](http://imgur.com/Ki7uOhG.jpg)
 
 ## Clickme example
 
@@ -31,7 +31,7 @@ source("clickme_asteroids.R")
 
 You should see this ([live example](rclickme.com/asteroids)):
 
-![Clickme Asteroids](http://imgur.com/ukbKCJ8)
+![Clickme Asteroids](http://imgur.com/ukbKCJ8.jpg)
 
 Original by [Alex H. Parker](https://plot.ly/~alexhp/68/).
 Data from [NASA NEO](http://neo.jpl.nasa.gov/cgi-bin/neo_ca?type=NEO&hmax=all&sort=date&sdir=ASC&tlim=all&dmax=5LD&max_rows=50&fmt=full&action=Display+Table&show=1)
