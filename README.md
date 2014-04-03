@@ -1,5 +1,7 @@
 # Interactive Visualizations in R using Shiny and Clickme
 
+This is a talk I gave at the Boston University Statistics Student Seminar on April 3rd 2014 ([slides](http://www.slideshare.net/nachocab/interactive-r-visualizations-using-shiny-and-clickme))
+
 Click on Download ZIP at the right, or use git to clone this repo.
 
 ``` r
