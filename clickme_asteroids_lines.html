@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <base target="_blank"> <!-- open all links on a new tab -->
+
+        <title>What asteroids are changing velocity?</title>
+
+        <link href="clickme_assets/clickme.css" rel="stylesheet">
+<link href="clickme_assets/d3_tip.css" rel="stylesheet">
+<link href="clickme_assets/chart.css" rel="stylesheet">
+<script src="clickme_assets/d3.v3.4.3.js"></script>
+<script src="clickme_assets/d3_aux.js"></script>
+<script src="clickme_assets/d3_tip.js"></script>
+
+        <style>
+            text{
+                font-family: Rockwell, Helvetica, Arial, sans;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="g-search">
+                <input type="text" placeholder="Search…">
+                <button style="display:none;" class="g-search-clear">X</button>
+        </div>
+
+        <script type="text/javascript">
+            plot = new_plot({
+                data: [[{"x":1921,"y":13.17,"diameter":62.44236613,"line_stroke_width":3.94267695458241,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2000 YA"},{"x":2001,"y":14.19,"diameter":62.44236613,"line_stroke_width":3.94267695458241,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2000 YA"},{"x":2012,"y":13.62,"diameter":62.44236613,"line_stroke_width":3.94267695458241,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2000 YA"},{"x":2045,"y":15.1,"diameter":62.44236613,"line_stroke_width":3.94267695458241,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2000 YA"}],[{"x":1926.916667,"y":3.73,"diameter":8.619445965,"line_stroke_width":2.10840572436761,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2003 WT153"},{"x":1944.833333,"y":3.56,"diameter":8.619445965,"line_stroke_width":2.10840572436761,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2003 WT153"},{"x":1980.75,"y":3.59,"diameter":8.619445965,"line_stroke_width":2.10840572436761,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2003 WT153"},{"x":2003.916667,"y":4.4,"diameter":8.619445965,"line_stroke_width":2.10840572436761,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2003 WT153"},{"x":2008.75,"y":4.89,"diameter":8.619445965,"line_stroke_width":2.10840572436761,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2003 WT153"}],[{"x":2008.083333,"y":9.25,"diameter":298.8679546,"line_stroke_width":12,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2007 TU24"},{"x":2046.083333,"y":8.3,"diameter":298.8679546,"line_stroke_width":12,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2007 TU24"},{"x":2113.083333,"y":8.09,"diameter":298.8679546,"line_stroke_width":12,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2007 TU24"},{"x":2168.083333,"y":9.05,"diameter":298.8679546,"line_stroke_width":12,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2007 TU24"}],[{"x":1931.166667,"y":14.29,"diameter":130.460594,"line_stroke_width":6.26072060828345,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2008 PF1"},{"x":1950.166667,"y":14.93,"diameter":130.460594,"line_stroke_width":6.26072060828345,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2008 PF1"},{"x":2031.166667,"y":13.78,"diameter":130.460594,"line_stroke_width":6.26072060828345,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2008 PF1"},{"x":2064.166667,"y":13.51,"diameter":130.460594,"line_stroke_width":6.26072060828345,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2008 PF1"}],[{"x":1985.916667,"y":5.45,"diameter":45.23549545,"line_stroke_width":3.35627124204222,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 JK1"},{"x":2012.916667,"y":5.49,"diameter":45.23549545,"line_stroke_width":3.35627124204222,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 JK1"},{"x":2083.416667,"y":4.09,"diameter":45.23549545,"line_stroke_width":3.35627124204222,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 JK1"},{"x":2130.916667,"y":4,"diameter":45.23549545,"line_stroke_width":3.35627124204222,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 JK1"}],[{"x":1915.75,"y":5.19,"diameter":8.231506992,"line_stroke_width":2.09518486427545,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 RF12"},{"x":2010.75,"y":6,"diameter":8.231506992,"line_stroke_width":2.09518486427545,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 RF12"},{"x":2059.166667,"y":4.44,"diameter":8.231506992,"line_stroke_width":2.09518486427545,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 RF12"},{"x":2095.75,"y":10.88,"diameter":8.231506992,"line_stroke_width":2.09518486427545,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 RF12"}],[{"x":1958,"y":7.29,"diameter":35.93183125,"line_stroke_width":3.03920476691744,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 XW58"},{"x":2010.916667,"y":5.81,"diameter":35.93183125,"line_stroke_width":3.03920476691744,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 XW58"},{"x":2070,"y":5.96,"diameter":35.93183125,"line_stroke_width":3.03920476691744,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 XW58"},{"x":2148.916667,"y":5.77,"diameter":35.93183125,"line_stroke_width":3.03920476691744,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2010 XW58"}],[{"x":1966.166667,"y":7.28,"diameter":14.30471967,"line_stroke_width":2.30215838514873,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2011 DS"},{"x":2011.166667,"y":6.47,"diameter":14.30471967,"line_stroke_width":2.30215838514873,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2011 DS"},{"x":2047.666667,"y":5.81,"diameter":14.30471967,"line_stroke_width":2.30215838514873,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2011 DS"},{"x":2050.166667,"y":7.03,"diameter":14.30471967,"line_stroke_width":2.30215838514873,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2011 DS"}],[{"x":1916,"y":15.52,"diameter":5.438502737,"line_stroke_width":2,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2012 KT42"},{"x":1955,"y":16.37,"diameter":5.438502737,"line_stroke_width":2,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2012 KT42"},{"x":1973.416667,"y":16.6,"diameter":5.438502737,"line_stroke_width":2,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2012 KT42"},{"x":2012.416667,"y":17.04,"diameter":5.438502737,"line_stroke_width":2,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2012 KT42"}],[{"x":1981.916667,"y":8.12,"diameter":56.94811474,"line_stroke_width":3.75543428500318,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2012 WH1"},{"x":2012.916667,"y":8.08,"diameter":56.94811474,"line_stroke_width":3.75543428500318,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2012 WH1"},{"x":2030,"y":9.25,"diameter":56.94811474,"line_stroke_width":3.75543428500318,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2012 WH1"},{"x":2131,"y":8.79,"diameter":56.94811474,"line_stroke_width":3.75543428500318,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2012 WH1"}],[{"x":1925.916667,"y":7.78,"diameter":94.51034563,"line_stroke_width":5.03554542079801,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2013 XA22"},{"x":2005.5,"y":7.81,"diameter":94.51034563,"line_stroke_width":5.03554542079801,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2013 XA22"},{"x":2020.5,"y":6.51,"diameter":94.51034563,"line_stroke_width":5.03554542079801,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2013 XA22"},{"x":2028.916667,"y":7.77,"diameter":94.51034563,"line_stroke_width":5.03554542079801,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"2013 XA22"}],[{"x":1918.166667,"y":6.26,"diameter":54.38502737,"line_stroke_width":3.66808492883846,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"367943 Duende"},{"x":2004.666667,"y":6.09,"diameter":54.38502737,"line_stroke_width":3.66808492883846,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"367943 Duende"},{"x":2012.166667,"y":5.93,"diameter":54.38502737,"line_stroke_width":3.66808492883846,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"367943 Duende"},{"x":2013.166667,"y":7.82,"diameter":54.38502737,"line_stroke_width":3.66808492883846,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"367943 Duende"},{"x":2046.166667,"y":6.23,"diameter":54.38502737,"line_stroke_width":3.66808492883846,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"367943 Duende"},{"x":2087.166667,"y":6.22,"diameter":54.38502737,"line_stroke_width":3.66808492883846,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"367943 Duende"},{"x":2116.166667,"y":6.16,"diameter":54.38502737,"line_stroke_width":3.66808492883846,"line_stroke_dasharray":"0","line_opacity":0.6,"radius":3,"point_opacity":0.6,"line_name":"367943 Duende"}]],
+                data_ranges: {
+          x: [1915.75,2168.083333],
+          y: [3.56,17.04]
+        },
+                categorical_domains: {
+          x: null,
+          y: null
+        },
+                width: 500,
+                height: 500,
+                padding: {"top":150,"right":400,"bottom":70,"left":100},
+                labels: {
+                    title: "What asteroids are changing velocity?",
+                    subtitle: "",
+                    x: "Date (Years)",
+                    y: "Velocity (km/s)",
+                    color_title: "Group"
+                },
+                rotate_label: {
+                    y: true
+                },
+                scale_limits: {
+                    x: null,
+                    y: null
+                },
+                jitter: 0,
+                hide_x_tick_labels: false,
+                ordinal_scale_padding: 1,
+                linear_scale_padding: 40
+            });
+
+            // sidebar
+            static_line_width = 5;
+            distance_between_show_names_and_color_groups = 80;
+
+            interpolate = "linear";
+            opacity = 0.6;
+            stroke_width = 0;
+            show_sidebar = true;
+
+            color_scale = d3.scale.ordinal().range(["#000"]);
+            r_color_group = function(d) {
+return "#000"
+};
+
+            color_legend_counts = [];
+            tooltip_content = function(d) {
+return "<table><tr><td colspan='2' class='tooltip-title'>" + d.line_name + "</td></tr><tr class='tooltip-metric'><td class='tooltip-metric-name'>Date (Years)</td><td class='tooltip-metric-value'>" + d3.format('.2f')(d['x']) + "</td></tr><tr class='tooltip-metric'><td class='tooltip-metric-name'>Velocity (km/s)</td><td class='tooltip-metric-value'>" + d3.format('.2f')(d['y']) + "</td></tr><tr class='tooltip-metric'><td class='tooltip-metric-name'>diameter</td><td class='tooltip-metric-value'>" + d3.format('.2f')(d['diameter']) + "</td></tr></table>"
+};
+        </script>
+
+        <script src="clickme_assets/Lines/plot.js"></script>
+    </body>
+</html>
+
