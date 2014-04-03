@@ -68,5 +68,4 @@ You should see this ([live example](http://rclickme.com/asteroids_lines.html)):
 * [Parallel coordinates plot](http://bl.ocks.org/jasondavies/1341281)
 * [Interactive line plot](http://projects.flowingdata.com/life-expectancy/)
 * [Sunburst plot](http://bl.ocks.org/kerryrodden/7090426)
-* [Random tree](http://www.jasondavies.com/random-arboretum/)
 * [Swimming sperm](http://bl.ocks.org/mbostock/1136236)
