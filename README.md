@@ -25,6 +25,8 @@ You should see this:
 
 ![Shiny Asteroids](http://imgur.com/Ki7uOhG.jpg)
 
+Check out the [Shiny tutorial](http://shiny.rstudio.com/tutorial/)
+
 ## Clickme points example
 
 ``` r
@@ -46,6 +48,8 @@ You should see this ([live example](http://rclickme.com/asteroids_points.html)):
 Inspiration from [Alex H. Parker](https://plot.ly/~alexhp/68/).
 Data from [NASA NEO](http://neo.jpl.nasa.gov/cgi-bin/neo_ca?type=NEO&hmax=all&sort=date&sdir=ASC&tlim=all&dmax=5LD&max_rows=50&fmt=full&action=Display+Table&show=1)
 
+Check out the [Clickme homepage](http://rclickme.com)
+
 ## Clickme lines example
 
 ``` r
@@ -56,3 +60,13 @@ source("clickme_asteroids_lines.R")
 You should see this ([live example](http://rclickme.com/asteroids_lines.html)):
 
 ![Clickme Asteroids lines](http://i.imgur.com/gNiWi6E.jpg)
+
+
+## D3 plots
+
+* [D3 homepage](http://d3js.org/)
+* [Parallel coordinates plot](http://bl.ocks.org/jasondavies/1341281)
+* [Interactive line plot](http://projects.flowingdata.com/life-expectancy/)
+* [Sunburst plot](http://bl.ocks.org/kerryrodden/7090426)
+* [Random tree](http://www.jasondavies.com/random-arboretum/)
+* [Swimming sperm](http://bl.ocks.org/mbostock/1136236)
