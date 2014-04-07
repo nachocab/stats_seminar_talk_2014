@@ -9,7 +9,8 @@ Click on Download ZIP at the right, or use git to clone this repo.
 install.packages("devtools")
 
 # and run this
-devtools::install_github(c("rstudio/shiny", "nachocab/clickme"))
+devtools::install_github("rstudio/shiny")
+devtools::install_github("nachocab/clickme", ref = "0.4.0")
 ```
 
 ## Shiny example
